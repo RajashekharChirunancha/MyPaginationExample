@@ -1,5 +1,6 @@
 package com.app.mypagination.data.remote
 
+import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface BeerApi {

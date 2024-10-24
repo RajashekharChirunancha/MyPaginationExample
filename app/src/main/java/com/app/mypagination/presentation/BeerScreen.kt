@@ -43,8 +43,8 @@ fun BeerScreen(
                 verticalArrangement = Arrangement.spacedBy(16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                items(beers) { beer ->
-                    if(beer != null) {
+                items(count = beers.itemCount) { index ->
+                    beers[index]?.let { beer ->
                         BeerItem(
                             beer = beer,
                             modifier = Modifier.fillMaxWidth()

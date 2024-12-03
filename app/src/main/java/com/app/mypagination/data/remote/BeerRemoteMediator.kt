@@ -38,7 +38,7 @@ class BeerRemoteMediator(
                 }
             }
 
-            val beers = beerApi.getBeers(
+                val beers = beerApi.getBeers(
                 page = loadKey,
                 pageCount = state.config.pageSize
             )
